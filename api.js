@@ -78,7 +78,7 @@ async function deleteProduct (req, res, next) {
   res.json(response)
 }
 async function createOrder (req, res, next) {
-  const order = await Orders.create(req.body)
+  const orders = await Orders.create(req.body)
   res.json(orders)
 }
 
